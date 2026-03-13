@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #F4F6F8;
+}
+
+.mainContainer {
+    height: 100vh;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.navSection {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+.img {
+    height: 75px;
+    width: 75px;
+}
+
+#WelcomeText {
+    font-size: 40px;
+    font-family: "poppins";
+    color: black;
+}
+
+#username {
+    font-size: 40px;
+    font-family: "poppins";
+    color: #9F67FF;
+}
+
+#overview {
+    font-family: "poppins";
+}
+
+.dashboard {
+    height: 70%;
+    width: 100%;
+}
+
+.firstSec {
+    width: 100%;
+    height: 50px;
+}
+
+.secondSec {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.box {
+    background-color: #FFFFFF;
+    height: 125px;
+    width: 500px;
+    border-radius: 25px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: "poppins";
+    font-size: 20px;
+}
+
+#lastbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.form-check-input {
+    width: 60px !important;
+    height: 30px !important;
+}
+
+.form-check-input:checked {
+    background-color: #7B2CBF !important;
+    border-color: #7B2CBF !important;
+
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(123, 44, 191, 0.3) !important;
+}
+
+.thirdSec {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.firstarea {
+    height: 500px;
+    width: 1500px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 25px;
+    padding: 20px;
+
+}
+
+.firstHeading {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.secondarea {
+    height: 300px;
+    width: 500px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.secondHeading {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.securityBtn {
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #6A00D4, #6A00D4);
+    box-shadow: 0 4px 10px #9333EA;
+    border: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.startSec {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lastSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.tick {
+    font-size: 40px;
+    color: #22bb33;
+}
+
+.lastHeading {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.graphLine {
+    background: linear-gradient(to bottom,
+            rgba(123, 44, 191, 0.35),
+            rgba(123, 44, 191, 0));
+}

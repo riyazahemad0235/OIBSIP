@@ -5,13 +5,16 @@ let register = document.querySelector(".register");
 let loginSection = document.querySelector(".loginContainer")
 
 register.addEventListener("click", () => {
+    let users = JSON.parse(localStorage.getItem("users")) || []
     let user = {
         name: name.value,
         email: email.value,
-        password: password.value
+        password: password.value,
+        loginCount: 0
     };
+    users.push(user)
 
-    localStorage.setItem("user", JSON.stringify(user));
+    localStorage.setItem("users", JSON.stringify(users));
     loginSection.innerHTML = "";
 
     // create success message

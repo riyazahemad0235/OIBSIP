@@ -74,9 +74,14 @@
 <body>
     <div class="mainContainer">
         <div class="navSection">
-            <img class="img" src="profile.png" alt="">
-            <h1 id="WelcomeText">Welcome Back,</h1>
-            <h1 id="username"></h1>
+            <div class="overview">
+                <img class="img" src="profile.png" alt="">
+                <h1 id="WelcomeText">Welcome Back,</h1>
+                <h1 id="username"></h1>
+            </div>
+            <div class="logout">
+                <button class="logoutBtn"> <i class="fa-solid fa-arrow-right-from-bracket"></i> Log Out</button>
+            </div>
         </div>
         <div class="dashboard">
             <div class="firstSec">
@@ -85,7 +90,7 @@
             <div class="secondSec">
                 <div class="box">
                     <h2>Active Sessions</h2>
-                    <h2>0</h2>
+                    <h2 class="loginCounts"></h2>
                 </div>
                 <div class="box">
                     <h2>Last password change</h2>

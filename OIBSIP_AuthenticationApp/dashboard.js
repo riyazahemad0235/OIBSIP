@@ -1,7 +1,11 @@
 let username = document.querySelector("#username")
+let loginCounts = document.querySelector(".loginCounts")
+let user = JSON.parse(localStorage.getItem("loggedInUser"));
+let logoutBtn = document.querySelector("button")
+username.textContent = user.name;
 
-let data = localStorage.getItem("user")
-user = JSON.parse(data)
+loginCounts.textContent = user.loginCount
 
-console.log(user.name)
-username.textContent = user.name
+logoutBtn.addEventListener("click", () => {
+    window.location.href = "index.html"
+})

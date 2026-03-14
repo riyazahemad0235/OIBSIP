@@ -19,12 +19,21 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-right: 30px;
 
 }
 
+.overview {
+    height: 100px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
 
 .img {
     height: 75px;
@@ -183,4 +192,16 @@ body {
     background: linear-gradient(to bottom,
             rgba(123, 44, 191, 0.35),
             rgba(123, 44, 191, 0));
+}
+
+.logoutBtn {
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #6A00D4, #6A00D4);
+    box-shadow: 0 4px 10px #9333EA;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: "poppins";
+    font-size: 20px;
 }

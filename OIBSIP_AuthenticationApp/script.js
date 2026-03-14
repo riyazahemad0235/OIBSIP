@@ -5,10 +5,13 @@ let loginSection = document.querySelector(".loginContainer")
 
 singin.addEventListener("click", () => {
     let data = localStorage.getItem('user');
-    let user = JSON.parse(data);
-    let Message = document.createElement("h1");
+    let users = JSON.parse(localStorage.getItem("users")) || []; let Message = document.createElement("h1");
     console.log(localStorage.getItem("user"))
-    if (username.value == user.email && password.value == user.password) {
+    let validUser = users.find((user) => {
+        return user.email === username.value && user.password === password.value;
+    });
+    if (validUser) {
+        validUser.loginCount++;
         let loader = document.createElement("div");
         loginSection.innerHTML = ""
         let successBox = document.createElement("div");
@@ -17,6 +20,8 @@ singin.addEventListener("click", () => {
         Message.classList.add("successMessage");
         successBox.append(loader, Message);
         loginSection.appendChild(successBox);
+        localStorage.setItem("users", JSON.stringify(users))
+        localStorage.setItem("loggedInUser", JSON.stringify(validUser));
 
         setTimeout(() => {
             loader.classList.add("none")
@@ -30,6 +35,7 @@ singin.addEventListener("click", () => {
         setTimeout(() => {
             message.classList.add("showMessage");
             setTimeout(() => {
+
                 window.location.href = "dashboard.html";
             }, 2000);
         }, 2500)
@@ -67,7 +73,13 @@ singin.addEventListener("click", () => {
             }, 2500);
         }, 2500)
 
+    }
 
+    for (i = 0; i < 0; i++) {
+        let count = 0
+        count = count + 1
+        console.log(count++)
+        let counts = localStorage.setItem("count", count)
     }
 })
 // loader.classList.add("loader");

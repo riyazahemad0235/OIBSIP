@@ -1,47 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Frijole&family=Gasoek+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Luckiest+Guy&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Frijole&family=Gasoek+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Luckiest+Guy&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="mainContainer">
-        <div class="navBar">To-Do App</div>
-        <div class="mainSection">
-            <div class="inputBox">
-                <div id="inputHeader">Add Your Task</div>
-                <div class="firstSec">
-                    <input type="text" id="inputArea" placeholder="Enter your task">
-                    <button id="inputButton">Add</button>
-                </div>
-                <textarea id="description" name="description" rows:5
-                    placeholder="description about your todo...."></textarea>
-            </div>
-            <div class="displaySection">
-                <h1 id="displayText">Your Tasks</h1>
-                <ul class="taskList"></ul>
-            </div>
-            <div class="resultSection">
-                <div class="completedSection">
-                    <h1 class="completeTitle">Completed Tasks</h1>
-                    <ol class="completeList">
-
-                    </ol>
-                </div>
-            </div>
+      <div class="navBar">To-Do App</div>
+      <div class="mainSection">
+        <div class="inputBox">
+          <div id="inputHeader">Add Your Task</div>
+          <div class="firstSec">
+            <input type="text" id="inputArea" placeholder="Enter your task" />
+            <button id="inputButton">Add</button>
+          </div>
+          <textarea
+            id="description"
+            name="description"
+            rows:5
+            placeholder="description about your todo...."
+          ></textarea>
         </div>
+        <div class="displaySection">
+          <h1 id="displayText">Your Tasks</h1>
+          <ul class="taskList"></ul>
+        </div>
+        <div class="resultSection">
+          <div class="completedSection">
+            <h1 class="completeTitle">Completed Tasks</h1>
+            <ol class="completeList"></ol>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

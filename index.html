@@ -1,72 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Riyaz | Internship Projects</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-
-    <header class="header">
-
-        <h1>Riyaz's Internship Projects</h1>
-        <p>Frontend projects built during Oasis Infobyte Internship</p>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riyaz | Portfolio</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Hero / Header Section -->
+    <header class="header container">
+      <div class="hero-content">
+        <h1>Riyaz<span class="red-dot">.</span></h1>
+        <p>
+          Frontend Developer crafting professional web experiences during Oasis
+          Infobyte internship.
+        </p>
+      </div>
     </header>
 
-    <section class="projects">
+    <!-- Main Content -->
+    <main class="container">
+      <h2 class="section-title">Internship Projects</h2>
 
+      <section class="projects-grid">
+        <!-- Project 1: To-Do App -->
         <div class="card">
-
+          <div class="card-info">
             <h2>To-Do App</h2>
-            <p>Task management web app with completion and descriptions.</p>
-
-            <a href="./OIBSIP-TodoApp/">View Project</a>
-
+            <p>
+              A functional task management application featuring category
+              filtering and local state persistence.
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="./OIBSIP-TodoApp/" class="btn">View Project</a>
+          </div>
         </div>
 
+        <!-- Project 2: Calculator -->
         <div class="card">
-
+          <div class="card-info">
             <h2>Calculator</h2>
-            <p>Responsive calculator built using HTML, CSS and JavaScript.</p>
-
-            <a href="./OIBSIP-Calculator/">View Project</a>
-
+            <p>
+              Precise responsive calculator with a focus on clean UI and
+              seamless arithmetic operations.
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="./OIBSIP-Calculator/" class="btn">View Project</a>
+          </div>
         </div>
 
+        <!-- Project 3: Tribute Page -->
         <div class="card">
-
+          <div class="card-info">
             <h2>Tribute Page</h2>
-            <p>A tribute webpage designed with semantic HTML and CSS.</p>
-
-            <a href="./OIBSIP-TributeApp/">View Project</a>
-
+            <p>
+              A biographical showcase utilizing semantic HTML5 and sophisticated
+              CSS layout techniques.
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="./OIBSIP-TributeApp/" class="btn">View Project</a>
+          </div>
         </div>
+
+        <!-- Project 4: Authenticator -->
         <div class="card">
-
-            <h2>Authenticator</h2>
-            <p>This project is a modern login and registration system with a security dashboard, built using HTML, CSS,
-                and JavaScript. </p>
-
-            <a href="OIBSIP_AuthenticationApp/index.html">View Poject</a>
+          <div class="card-info">
+            <h2>Security Portal</h2>
+            <p>
+              Modern authentication system with a dashboard interface, featuring
+              robust form validation.
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="OIBSIP_AuthenticationApp/index.html" class="btn"
+              >View Project</a
+            >
+          </div>
         </div>
+      </section>
+    </main>
 
-    </section>
-
-    <footer>
-
-        <p>© 2026 Riyaz | Frontend Developer</p>
-
+    <!-- Footer -->
+    <footer class="container">
+      <div class="footer-inner">
+        <p>© 2026 Riyaz | Frontend Developer & UI Designer</p>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>
